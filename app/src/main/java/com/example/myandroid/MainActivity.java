@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         getCamera();
         getLifecycle().addObserver(new MainActivityObserver());
 
+        Toast.makeText(MainActivity.this, "Lifecycle begins",Toast.LENGTH_SHORT).show();
 
         Log.i(TAG, "owner onCreate");
     }
